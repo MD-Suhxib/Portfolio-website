@@ -34,15 +34,21 @@ export function ServicesSection() {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+          <h2 
+            className="text-4xl lg:text-5xl font-bold text-white mb-6 animate-flow-up"
+            style={{ animationDelay: '0.1s' }}
+          >
             <span className="bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">
               "What I Do"
             </span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-            I’m a passionate AI-driven full-stack developer and a final-year Computer Science Engineering student specializing in Artificial Intelligence and Machine Learning. With hands-on experience in LLMs, data analysis, and real-world problem-solving, I create impactful and scalable digital solutions that blend cutting-edge AI with intuitive user interfaces.
+          <p 
+            className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed animate-flow-up"
+            style={{ animationDelay: '0.2s' }}
+          >
+            I'm a passionate AI-driven full-stack developer and a final-year Computer Science Engineering student specializing in Artificial Intelligence and Machine Learning. With hands-on experience in LLMs, data analysis, and real-world problem-solving, I create impactful and scalable digital solutions that blend cutting-edge AI with intuitive user interfaces.
             My strengths lie in building and managing full-stack projects, conducting data-driven analysis, designing intelligent systems, and delivering seamless user experiences. I enjoy working across the stack using tools like Python, React.js, Next.js, Firebase, and various AI APIs including OpenAI and Gemini.
-            Whether it's developing AI-powered platforms, leading tech teams, or visualizing insights through data — I thrive on using technology to solve real-world problems. I’m always exploring new challenges to grow as a builder, innovator, and lifelong learner.
+            Whether it's developing AI-powered platforms, leading tech teams, or visualizing insights through data — I thrive on using technology to solve real-world problems. I'm always exploring new challenges to grow as a builder, innovator, and lifelong learner.
           </p>
         </div>
 
@@ -50,7 +56,8 @@ export function ServicesSection() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-gradient-to-br from-white/95 to-gray-50/95 border border-gray-200 backdrop-blur-sm hover:border-green-500/50 transition-all duration-300 group hover:transform hover:scale-105 rounded-lg shadow-lg"
+              className="bg-gradient-to-br from-white/95 to-gray-50/95 border border-gray-200 backdrop-blur-sm hover:border-green-500/50 transition-all duration-300 group hover:transform hover:scale-105 rounded-lg shadow-lg animate-flow-up"
+              style={{ animationDelay: `${0.3 + index * 0.1}s` }}
             >
               <div className="p-8 text-center space-y-6">
                 <div className="w-16 h-16 mx-auto bg-gradient-to-r from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">

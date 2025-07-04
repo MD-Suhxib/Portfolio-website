@@ -6,12 +6,18 @@ export function Footer() {
     <footer className="py-12 border-t border-slate-800 bg-black">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
-          <div className="text-center md:text-left">
+          <div 
+            className="text-center md:text-left animate-flow-up"
+            style={{ animationDelay: '0.1s' }}
+          >
             <h3 className="text-xl font-bold text-white mb-2">Mohammed Suhaib S.</h3>
             <p className="text-gray-400">A Full-Stack AI Engineer</p>
           </div>
 
-          <div className="flex items-center space-x-6">
+          <div 
+            className="flex items-center space-x-6 animate-flow-up"
+            style={{ animationDelay: '0.2s' }}
+          >
             <Link
               href="https://github.com/MD-Suhxib"
               className="p-2 rounded-lg bg-white/10 backdrop-blur-sm hover:bg-green-500/20 transition-all duration-200 group"
@@ -32,7 +38,10 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 pt-8 border-t border-slate-800 text-center">
+        <div 
+          className="mt-8 pt-8 border-t border-slate-800 text-center animate-flow-up"
+          style={{ animationDelay: '0.3s' }}
+        >
           <p className="text-gray-400 flex items-center justify-center">
             Made with <Heart className="w-4 h-4 text-green-500 mx-2" /> by MD Suhaib S. © 2024
           </p>

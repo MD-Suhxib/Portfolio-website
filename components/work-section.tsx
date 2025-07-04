@@ -79,10 +79,16 @@ export function WorkSection() {
       <div className="container mx-auto px-6 relative z-10">
         {/* Header */}
         <div className="text-center mb-20">
-          <h2 className="text-5xl lg:text-6xl font-bold text-white mb-4">
+          <h2 
+            className="text-5xl lg:text-6xl font-bold text-white mb-4 animate-flow-up"
+            style={{ animationDelay: '0.1s' }}
+          >
             <span className="bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">Work</span>
           </h2>
-          <p className="text-lg text-gray-400 max-w-3xl mx-auto">
+          <p 
+            className="text-lg text-gray-400 max-w-3xl mx-auto animate-flow-up"
+            style={{ animationDelay: '0.2s' }}
+          >
             Projects showcasing my expertise in AI, full-stack development, and innovation.
           </p>
         </div>
@@ -92,7 +98,8 @@ export function WorkSection() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group relative rounded-xl overflow-hidden shadow-xl transition-transform duration-500 hover:-translate-y-1"
+              className="group relative rounded-xl overflow-hidden shadow-xl transition-transform duration-500 hover:-translate-y-1 animate-flow-up"
+              style={{ animationDelay: `${0.3 + index * 0.1}s` }}
               onMouseEnter={() => setHoveredProject(index)}
               onMouseLeave={() => setHoveredProject(null)}
             >
