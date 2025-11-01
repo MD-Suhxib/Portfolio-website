@@ -7,6 +7,17 @@ export function WorkSection() {
   const [hoveredProject, setHoveredProject] = useState<number | null>(null);
 
   const projects = [
+     {
+      title: "Amara Coffee",
+      description: "Where fine taste meet greener Tomorrow",
+      image: "/coffee01.png",
+      tags: ["Dynamix", "TypeScript", "Coffee"],
+      liveUrl: "https://amara-coffee.vercel.app/",
+      githubUrl: "https://github.com/MD-Suhxib/AMARA-COFFEE",
+      category: "Coffee-Brand",
+      status: "Live",
+      // year: "2024"
+    },
     {
       title: "Agro Chain",
       description: "Connecting Farmers Directly with Buyers for Fair Trade and Sustainable Agriculture",
