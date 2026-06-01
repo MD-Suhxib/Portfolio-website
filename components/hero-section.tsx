@@ -56,7 +56,7 @@ export function HeroSection() {
               style={{ animationDelay: '0.4s' }}
             >
               <a
-                href="https://drive.google.com/file/d/1SPtlRh2KzbxpDWsh_zlPOwuz3gBOTV5W/view?usp=sharing"
+                href="https://drive.google.com/file/d/1IPgTXoh9_-y6fnCIJcTDtxB3tQWYl-HW/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >
