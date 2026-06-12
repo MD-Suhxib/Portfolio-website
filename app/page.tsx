@@ -1,35 +1,52 @@
+"use client"
+
 import { Navigation } from "@/components/navigation"
 import { HeroSection } from "@/components/hero-section"
-import { ServicesSection } from "@/components/services-section"
 import { WorkSection } from "@/components/work-section"
+import { ServicesSection } from "@/components/services-section"
+import { ProcessSection } from "@/components/process-section"
+import { ProfileSection } from "@/components/profile-section"
+import { ResultsSection } from "@/components/results-section"
+import { ScoresSection } from "@/components/scores-section"
 import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
+import { FloatingWidgets } from "@/components/floating-widgets"
 
 export default function Portfolio() {
   return (
-    <main className="min-h-screen bg-black scroll-smooth">
-      {/* Navbar */}
+    <main className="min-h-screen bg-transparent text-white selection:bg-[#c9e265] selection:text-black scroll-smooth relative overflow-hidden">
+      {/* Navigation Header */}
       <Navigation />
 
-      {/* Sections */}
-      <section id="home">
-        <HeroSection />
-      </section>
+      {/* Hero Intro */}
+      <HeroSection />
 
-      <section id="services">
-        <ServicesSection />
-      </section>
+      {/* Profile / Kerim Bilin (Mohammed Suhaib S. About Me) */}
+      <ProfileSection />
 
-      <section id="work">
-        <WorkSection />
-      </section>
+      {/* Selected Work List */}
+      <WorkSection />
 
-      <section id="contact">
-        <ContactSection />
-      </section>
+      {/* Services Grid */}
+      <ServicesSection />
 
-      {/* Footer */}
+      {/* Scroll-Pinned Process Section */}
+      <ProcessSection />
+
+      {/* Outcomes & Charts */}
+      <ResultsSection />
+
+      {/* Lighthouse Scores */}
+      <ScoresSection />
+
+      {/* Briefing / Contact Form */}
+      <ContactSection />
+
+      {/* Sitemap Footer */}
       <Footer />
+
+      {/* Fixed WhatsApp/Call Widgets */}
+      <FloatingWidgets />
     </main>
   )
 }
