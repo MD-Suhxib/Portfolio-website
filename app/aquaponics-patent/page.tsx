@@ -32,7 +32,7 @@ export default function AquaponicsPatentPage() {
       {/* Full Screen Image Content */}
       <div className="w-full relative bg-[#070707]">
         <Image
-          src="/patent.png"
+          src="/Revised-Aquaponics.png"
           alt="Integrated Aquaponics System Mockup"
           width={1920}
           height={2400}

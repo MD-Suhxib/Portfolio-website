@@ -32,7 +32,7 @@ export function WorkSection() {
       category: "Logistics & Commerce",
       year: "2024",
       liveUrl: "/aquaponics-patent",
-      image: "/Patent.png"
+      image: "/Revised-Aquaponics.png"
     },
     {
       title: "Amara Coffee",
